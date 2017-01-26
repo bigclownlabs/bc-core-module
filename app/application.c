@@ -1,3 +1,11 @@
+/*
+
+Visual Studio Code
+Ctrl+Shift+B     to build
+Ctrl+P task dfu  to flash MCU with dfu-util
+
+*/
+
 #include <application.h>
 #include <usb_talk.h>
 #include <bc_led.h>
