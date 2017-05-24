@@ -14,7 +14,7 @@
 //                "engineLogging": true
             },
             "windows": {
-                "program": "${workspaceRoot}\\out\\firmware.elf",
+                "program": "${workspaceRoot}\\out\\debug\\firmware.elf",
                 "miDebuggerPath": "${env:SystemDrive}\\BigClown\\usr\\bin\\arm-none-eabi-gdb.exe",
                 "debugServerPath": "${env:SystemDrive}\\BigClown\\usr\\bin\\bcg.cmd",
                 "debugServerArgs": "${workspaceRoot}",
