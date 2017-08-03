@@ -1,25 +1,21 @@
 dist: trusty
-
 language: c
-
 addons:
   apt:
     sources:
-    - sourceline: 'ppa:team-gcc-arm-embedded/ppa'
+      - sourceline: ppa:team-gcc-arm-embedded/ppa
     packages:
-    - gcc-arm-embedded
-
-script: ./build.sh
-
+      - gcc-arm-embedded
+script:
+  - make release
 deploy:
-    skip_cleanup: true
-    file_glob: true
-    file: "out/release/firmware.bin"
-    api_key: "${GITHUB_KEY}"
-    provider: releases
-    overwrite: true
-    on:
-       tags: true
-
+  skip_cleanup: true
+  file_glob: true
+  file: out/release/firmware.bin
+  api_key: ${GITHUB_KEY}
+  provider: releases
+  overwrite: true
+  on:
+    tags: true
 notifications:
-    email: false
+  email: false
