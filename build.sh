@@ -2,4 +2,4 @@
 
 set -eux
 
-make
+make release
