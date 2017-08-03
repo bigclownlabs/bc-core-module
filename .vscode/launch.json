@@ -1,26 +1,24 @@
 {
     "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "C MCU JLink  Launch",
-//            "preLaunchTask": "build",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "",
-            "cwd": "${workspaceRoot}",
-            "MIMode": "gdb",
-            "miDebuggerServerAddress": "localhost:2331",
-            "logging": {
-//                "engineLogging": true
-            },
-            "windows": {
-                "program": "${workspaceRoot}\\out\\debug\\firmware.elf",
-                "miDebuggerPath": "${env:SystemDrive}\\BigClown\\usr\\bin\\arm-none-eabi-gdb.exe",
-                "debugServerPath": "${env:SystemDrive}\\BigClown\\usr\\bin\\bcg.cmd",
-                "debugServerArgs": "${workspaceRoot}",
-                "serverStarted": "Connected to target",
-                "serverLaunchTimeout": 5000
-            }
+    "configurations": [{
+        "name": "C MCU JLink  Launch",
+        "type": "cppdbg",
+        "request": "launch",
+        "preLaunchTask": "build",
+        "cwd": "${workspaceRoot}",
+        "MIMode": "gdb",
+        "miDebuggerServerAddress": "localhost:2331",
+        "logging": {
+            "engineLogging": true
+        },
+        "program": "${workspaceRoot}\\out\\debug\\firmware.elf",
+        "miDebuggerPath": "arm-none-eabi-gdb",
+        "debugServerPath": "make",
+        "debugServerArgs": "-w -C \"${workspaceRoot}\" jlink",
+        "serverStarted": "Connected to target",
+        "serverLaunchTimeout": 10000,
+        "windows": {
+            "miDebuggerPath": "arm-none-eabi-gdb.exe"
         }
-    ]
+    }]
 }
