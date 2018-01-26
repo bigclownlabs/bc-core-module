@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/github/license/bigclownlabs/bcf-skeleton.svg)](https://github.com/bigclownlabs/bcf-skeleton/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/follow/BigClownLabs.svg?style=social&label=Follow)](https://twitter.com/BigClownLabs)
 
-This repository contains firmware skeleton for [Core Module](https://shop.bigclown.com/products/core-module).
+This repository contains firmware skeleton for [Core Module](https://shop.bigclown.com/core-module).
 
 If you want to get more information about Core Module, firmware and how to work with it, please follow this link:
 
