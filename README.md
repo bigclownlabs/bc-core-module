@@ -11,7 +11,7 @@ This repository contains firmware skeleton for [Core Module](https://shop.bigclo
 
 If you want to get more information about Core Module, firmware and how to work with it, please follow this link:
 
-**https://www.bigclown.com/doc/firmware/basic-overview/**
+**https://developers.hardwario.com/firmware/basic-overview/**
 
 User's application code (business logic) goes into `app/application.c`.
 The default content works as a *Hello World* example.
