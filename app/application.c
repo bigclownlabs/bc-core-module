@@ -1,6 +1,6 @@
 #include <application.h>
 
-// Find defailed API description at https://sdk.bigclown.com/
+// Find defailed API description at https://sdk.hardwario.com/
 
 // LED instance
 bc_led_t led;
