@@ -2,9 +2,9 @@
 #define _APPLICATION_H
 
 #ifndef VERSION
-#define VERSION "vdev"
+#define VERSION "null"
 #endif
 
 #include <bcl.h>
 
-#endif // _APPLICATION_H
+#endif
